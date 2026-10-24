@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   title: "Herts navigation case study — Bilal Essakini",
   description:
     "How I rebuilt the main navigation for herts.ac.uk: one shared, accessible navigation for every university site, managed by editors in the CMS.",
+  openGraph: {
+    title: "Herts navigation case study — Bilal Essakini",
+    description: "One shared, accessible navigation for every University of Hertfordshire site.",
+    url: "https://bilalessakini.com/work/herts-navigation",
+    type: "article",
+  },
 };
 
 const railLinks = hertsCase.sections.map((s) => ({ id: s.id, label: s.label, number: s.number }));

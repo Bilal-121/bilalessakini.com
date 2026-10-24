@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   title: "Deskivo case study — Bilal Essakini",
   description:
     "How I designed and built Deskivo, a desk-booking app for hybrid teams: the problem, the build, and the engineering decisions behind it.",
+  openGraph: {
+    title: "Deskivo case study — Bilal Essakini",
+    description: "Desk booking for hybrid teams, designed and built end to end.",
+    url: "https://bilalessakini.com/work/deskivo",
+    type: "article",
+  },
 };
 
 const railLinks = deskivoCase.sections.map((s) => ({ id: s.id, label: s.label, number: s.number }));

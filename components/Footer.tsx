@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { person } from "@/lib/content";
 import { ArrowDown } from "./icons";
+import CookieSettingsLink from "./CookieSettingsLink";
 
 /** Shared closing strip: starts at the rail's edge so the rail and its CV button stay whole. */
 export default function Footer() {
@@ -16,6 +18,10 @@ export default function Footer() {
         <div className="text-sm">
           <p>Built with Next.js, Tailwind CSS, Vercel</p>
           <p>© 2026 {person.name}</p>
+          <p className="flex flex-wrap gap-x-4">
+            <Link href="/privacy" className="link-arrow min-h-0 text-sm font-semibold">Privacy and cookies</Link>
+            <CookieSettingsLink />
+          </p>
         </div>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo } from "next/font/google";
 import "./globals.css";
+import Consent from "@/components/Consent";
 
 // One variable family: the width axis carries both the condensed display
 // caps (wdth 62) and the plain body text (wdth 100).
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
     locale: "en_GB",
     type: "website",
   },
+  twitter: { card: "summary_large_image" },
+  verification: { google: "Dj5LjnGcQvGu4gx0nnb7CH5SW_xGbL9Ml2_GSkVf2vA" },
 };
 
 export const viewport: Viewport = {
@@ -36,7 +39,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-GB" className={archivo.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Consent />
+      </body>
     </html>
   );
 }

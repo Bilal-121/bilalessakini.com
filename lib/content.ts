@@ -60,7 +60,7 @@ export const herts = {
   problem:
     "The old navigation looked dated, slowed the site down, and made it hard for prospective students, current students and staff to find what they needed — its labels didn’t say where links went.",
   build:
-    "Six plain top-level sections with search. Each opens a full-width menu of links grouped under clear headings, with descriptive labels so people know where they’re going before they click. On mobile, a full-screen menu drills into the same sections.",
+    "Six plain top-level sections. Each opens a full-width menu of links grouped under clear headings, with descriptive labels so people know where they’re going before they click. On mobile, a full-screen menu drills into the same sections.",
   resultSource: "Measured with Google Lighthouse.",
   // Outcomes without exact figures: the 40% above is the only measured number.
   otherResults:
@@ -188,7 +188,7 @@ export const deskivoCase = {
 
 // Herts navigation case study. Facts come from PRODUCT.md (Bilal's own account
 // of the restructure). The 40% is never attributed to one change. The
-// Technical details wording is a draft until Bilal approves it.
+// Technical details wording was approved by Bilal on 2026-10-24.
 export const hertsCase = {
   sections: [
     { id: "problem", label: "The problem", number: "01" },
@@ -212,7 +212,7 @@ export const hertsCase = {
     "It was also hard to use. People couldn’t easily get to what they wanted, and its labels didn’t make clear where links went. Every visitor relies on it — prospective students, current students and staff.",
   ],
   built: [
-    "A full restructure, not a reskin. Six plain top-level sections — Study, Life, International, Research, For Business and About Us — plus search. Each opens a full-width menu of links grouped under clear headings, with a promo card, and the page behind dims so the menu stays the focus. On mobile, a full-screen menu drills into the same sections.",
+    "A full restructure, not a reskin. Six plain top-level sections — Study, Life, International, Research, For Business and About Us. Each opens a full-width menu of links grouped under clear headings, with a promo card, and the page behind dims so the menu stays the focus. On mobile, a full-screen menu drills into the same sections.",
     "Underneath, one shared HTML and JavaScript navigation now serves every university site. Before building it, I audited and tested the existing sites. Some still ran older templates, so I made the new navigation compatible with each of them through a per-template CSS adjustment only; the markup and behaviour are the same everywhere. I also set each older category site’s CMS header and layout to use the right navigation style.",
     "None of the navigation’s content is hard-coded. Link titles, URLs, labels and social links come from CMS data sets, layouts and metadata.",
   ],
@@ -232,7 +232,6 @@ export const hertsCase = {
   ],
   result:
     "A 40% overall improvement in page load speed and performance, measured with Google Lighthouse alongside this restructure. Beyond the speed: fewer support requests about finding pages, and clearer analytics on how visitors move through the site.",
-  // DRAFT: awaiting Bilal's approval before the site is published.
   technical: [
     {
       title: "One navigation, many templates",
